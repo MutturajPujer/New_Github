@@ -1,15 +1,12 @@
 name: hello-world
-
 on:
   push:
-    branches:
-      -main
+    branches: -main
 jobs:
   demo-test:
     runs-on: ubuntu-latest
-
     steps:
-    - name: demo-step
-      run: echo "Hello, World!"
-    - name: demo-step2
-      run: echo "Welcome"
+      - name: demo-step
+        run: echo "Hello, World!"
+      - name: demo-step2
+        run: echo "Welcome"
